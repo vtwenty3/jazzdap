@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         bgImgTrumpet: "url('/assets/bgTrumpet.jpg')",
       },
+      fontFamily: {
+        Raleway: ["Raleway", "sans-serif"],
+      }, //end of fontFamily
     },
     colors: {
       primary: "#282a3e",

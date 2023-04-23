@@ -4,9 +4,13 @@ import logo from "./../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="flex w-full items-center justify-between   bg-primary text-offWhite	 py-2 px-4">
+    <div
+      className="sticky top-0 z-10 flex w-full items-center  justify-between bg-primary	 px-4 py-2 text-offWhite drop-shadow-lg
+
+"
+    >
       <img src={logo} alt="Logo" className="w-24" />
-      <div className="justify-center gap-3 flex">
+      <div className="flex justify-center gap-3">
         <a>JazzDap</a>
         <a>JazzDap</a>
         <a>JazzDap</a>
