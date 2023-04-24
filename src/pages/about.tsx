@@ -1,16 +1,10 @@
 import dots from ".././assets/dots.png";
+import Title from "../components/title";
 export default function about() {
   return (
     <div className=" relative flex h-screen   flex-1  flex-col  overflow-hidden      text-accent">
-      <div className=" left-0 top-0	 flex basis-1/4   flex-col justify-center p-4 ">
-        <h3 className=" font-Raleway text-6xl font-bold text-offWhite">
-          About the
-        </h3>
-        <h3 className=" font-Raleway text-6xl font-bold text-accent">
-          Project
-        </h3>
-      </div>
-      <div className="text-md  basis-3/4   p-4 text-offWhite md:columns-2  md:text-lg  lg:pr-[33%]  lg:text-xl ">
+      <Title firstLine="About the" secondLine="Project" />
+      <div className="text-md  basis-3/4   p-4 text-offWhite md:columns-2  md:text-lg  lg:p-global lg:pr-[33%] lg:text-xl ">
         <p className=" font-regular font-Raleway ">
           <p className=" font-Raleway text-3xl font-bold">
             A NEH-AHRC New Directions for Digital Scholarship in Cultural

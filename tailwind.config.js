@@ -9,11 +9,17 @@ export default {
       fontFamily: {
         Raleway: ["Raleway", "sans-serif"],
       }, //end of fontFamily
-    },
-    colors: {
-      primary: "#282a3e",
-      accent: "#d3a273",
-      offWhite: "#f2f2f2",
+      spacing: {
+        global: "2rem",
+      },
+      colors: {
+        primary: "#282a3e",
+        accentLight: "#f0b881",
+
+        accent: "#d3a273",
+        accentDark: "#967453",
+        offWhite: "#f2f2f2",
+      },
     },
   },
   plugins: [],
