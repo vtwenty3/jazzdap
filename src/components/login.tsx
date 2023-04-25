@@ -1,15 +1,13 @@
 type Props = {
-  visible: boolean;
+  onClose: () => void;
 };
 export default function login(props: Props) {
+  const handleButtonClick = () => {
+    props.onClose();
+  };
   return (
-    <div
-      className="hidden"
-      style={
-        props.visible == true ? { display: "block" } : { display: "hidden" }
-      }
-    >
-      <div className=" relative  flex min-h-screen flex-col justify-center overflow-hidden py-6 antialiased sm:py-12">
+    <div className="fixed   bottom-0 left-0 right-0 top-0  mx-auto my-auto flex  items-center justify-center">
+      <div className=" relative  flex  h-screen w-screen flex-col  justify-center overflow-hidden bg-black bg-opacity-40 py-6 text-offWhite   antialiased sm:py-12">
         <div className="relative mx-auto   py-3 text-center sm:w-96">
           <span className="text-2xl font-light ">Login to your account</span>
           <div className="mt-4 rounded-lg bg-primary text-left shadow-md">
@@ -21,24 +19,30 @@ export default function login(props: Props) {
                 placeholder="Email"
                 className="  mt-2  h-5 w-full rounded-md border px-3 py-5 text-black hover:outline-none focus:outline-none focus:ring-2 focus:ring-accent"
               />
-              <label className="mt-3 block font-semibold">
-                Username or Email
-              </label>
+              <label className="mt-3 block font-semibold">Password</label>
               <input
                 type="password"
                 placeholder="Password"
                 className="mt-2 h-5 w-full rounded-md border px-3 py-5 text-black hover:outline-none focus:outline-none focus:ring-2 focus:ring-accent "
               />
+              <a href="#" className="text-sm hover:underline">
+                Forgot password?
+              </a>
               <div className="flex items-baseline justify-between">
                 <button
                   type="submit"
-                  className=" mt-4 rounded-md bg-accent px-6 py-2 text-primary hover:bg-accentLight "
+                  className=" mt-4 rounded-md  bg-red-500 px-12 py-2 text-primary hover:bg-accentLight "
+                  onClick={handleButtonClick}
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  className=" mt-4 rounded-md bg-accent px-12 py-2 text-primary hover:bg-accentLight "
+                  onClick={handleButtonClick}
                 >
                   Login
                 </button>
-                <a href="#" className="text-sm hover:underline">
-                  Forgot password?
-                </a>
               </div>
             </div>
           </div>

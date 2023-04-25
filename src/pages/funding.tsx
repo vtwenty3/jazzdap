@@ -3,7 +3,7 @@ import Title from "../components/title";
 
 export default function funding() {
   return (
-    <div className=" relative flex h-screen   flex-1  flex-col  overflow-hidden      text-accent">
+    <div className="relative flex h-screen flex-1  flex-col overflow-hidden text-accent">
       <Title firstLine="Duration" secondLine="  & Funding" />
 
       <p className=" font-regular  px-4 pr-[40%] font-Raleway text-xl text-offWhite lg:p-global lg:pr-[66%]">

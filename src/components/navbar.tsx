@@ -1,18 +1,50 @@
 import logo from "./../assets/logo.png";
-
-function Navbar() {
+type Props = {
+  onLogin: () => void;
+  onInvest: () => void;
+  onAbout: () => void;
+  onPartner: () => void;
+  onFunding: () => void;
+  onLanding: () => void;
+};
+function Navbar(props: Props) {
   return (
     <div
-      className="sticky top-0 z-10 flex w-full items-center  justify-between bg-primary  px-4	 py-2 text-offWhite drop-shadow-lg lg:px-global
+      className="sticky top-0 z-10 flex w-full items-center  justify-between bg-primary px-4 py-2	 text-offWhite drop-shadow-lg lg:px-global lg:text-lg
 "
     >
-      <img src={logo} alt="Logo" className="w-24 lg:w-28" />
-      <div className="flex justify-center gap-3">
-        <a>About</a>
-        <a>Funding</a>
-        <a>Investigators</a>
+      <img
+        onClick={props.onLanding}
+        src={logo}
+        alt="Logo"
+        className=" w-24 cursor-pointer   hover:brightness-125	  lg:w-28"
+      />
+      <div className="flex  justify-center gap-2 lg:gap-5">
+        <a
+          className=" cursor-pointer hover:text-accentLight"
+          onClick={props.onAbout}
+        >
+          About
+        </a>
+        <a
+          className=" cursor-pointer hover:text-accentLight"
+          onClick={props.onFunding}
+        >
+          Funding
+        </a>
+        <a
+          className=" cursor-pointer hover:text-accentLight"
+          onClick={props.onInvest}
+        >
+          Investigators
+        </a>
       </div>
-      <a className="flex flex-row items-center gap-1">Login</a>
+      <a
+        onClick={props.onLogin}
+        className=" flex cursor-pointer flex-row items-center gap-1 hover:text-accentLight"
+      >
+        Login
+      </a>
     </div>
   );
 }

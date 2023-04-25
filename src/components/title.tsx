@@ -1,4 +1,3 @@
-import React from "react";
 type Props = {
   firstLine: string;
   secondLine: string;
