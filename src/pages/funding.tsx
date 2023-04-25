@@ -6,7 +6,7 @@ export default function funding() {
     <div className="relative flex h-screen flex-1  flex-col overflow-hidden text-accent">
       <Title firstLine="Duration" secondLine="  & Funding" />
 
-      <p className=" font-regular text-md px-4 pr-[40%] font-Raleway text-offWhite md:text-xl lg:p-global lg:pr-[66%]">
+      <p className=" font-regular text-md px-4 font-Raleway text-offWhite md:pr-[40%] md:text-xl lg:p-global lg:pr-[66%]">
         The project is an ongoing collaboration between six different
         universities across four countries, which started in Feb 2021 and is
         funded until July 2024 by the NEH/AHRC New Directions for Digital

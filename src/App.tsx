@@ -39,11 +39,11 @@ function App() {
         onFunding={() => scrollTo(funding)}
         onLogin={handleOpen}
       />
-      <div className="scroll-mt-20 " ref={landing}>
+      <div ref={landing}>
         <Landing onClick={() => scrollTo(search)} />
       </div>
       <div
-        className=" -my-[40vh]  h-[550vh]  pt-[40vh] "
+        className=" -mt-[40vh]  h-[550vh]  pt-[40vh] "
         style={{
           background:
             "linear-gradient(122deg, rgba(2,3,12,1) 5%, rgba(42,45,78,1) 28%, rgba(33,29,56,1) 76%, rgba(80,111,127,1) 100%)",

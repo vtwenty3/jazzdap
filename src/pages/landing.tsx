@@ -1,4 +1,4 @@
-import bg_land from "./../assets/land.png";
+import bg_land from "./../assets/landCompressed.png";
 import { BsMusicNote } from "react-icons/bs";
 type Props = {
   onClick: () => void;
@@ -6,13 +6,13 @@ type Props = {
 export default function landing(props: Props) {
   return (
     <div className="  ">
-      <div className="relative">
+      <div className="absolute">
         <img
-          className="bot-0 h-[90dvh] w-screen object-cover object-bottom"
+          className=" bot-0  h-[90dvh] w-screen object-cover object-bottom"
           src={bg_land}
         />
       </div>
-      <div className="absolute -top-10  flex h-[100dvh]  flex-col justify-center   px-4 lg:px-global ">
+      <div className="  w-sceen relative  flex    h-[100dvh] flex-col  justify-center   px-4 lg:px-global ">
         <h2 className="font-Raleway text-4xl  font-medium text-accent md:text-6xl lg:text-7xl">
           Welcome to
         </h2>
