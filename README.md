@@ -1,7 +1,8 @@
 
 <aside>
-💡 Built with with React, Typescript and Vite. Styled with tailwind and MUI.
+💡 Built with with React, Typescript and Vite. Styled with tailwind and MUI. 
 </aside>
+\
 
 <aside>
 🌐 Live at: https://vtwenty3.github.io/jazzdap/
