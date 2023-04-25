@@ -12,7 +12,7 @@ export default function landing(props: Props) {
           src={bg_land}
         />
       </div>
-      <div className="  w-sceen relative  flex    h-[100dvh] flex-col  justify-center   px-4 lg:px-global ">
+      <div className="  w-sceen relative  flex    h-[100dvh] flex-col  justify-center  px-4  pb-28 lg:px-global ">
         <h2 className="font-Raleway text-4xl  font-medium text-accent md:text-6xl lg:text-7xl">
           Welcome to
         </h2>
