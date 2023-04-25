@@ -3,6 +3,11 @@
 💡 Built with with React, Typescript and Vite. Styled with tailwind and MUI.
 </aside>
 
+<aside>
+🌐 Live at: https://vtwenty3.github.io/jazzdap/
+</aside>
+
+
 ### 💻 How to run?
 1. clone the repo (link [https://github.com/vtwenty3/jazzdap.git](https://github.com/vtwenty3/jazzdap.git))
 2. make sure you have `npm > 7`
