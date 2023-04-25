@@ -1,4 +1,4 @@
-import bg_land from "./../assets/bg-lands.png";
+import bg_land from "./../assets/land.png";
 import { BsMusicNote } from "react-icons/bs";
 type Props = {
   onClick: () => void;
