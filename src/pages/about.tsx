@@ -4,9 +4,9 @@ export default function about() {
   return (
     <div className=" relative flex h-screen   flex-1  flex-col  overflow-hidden      text-accent">
       <Title firstLine="About the" secondLine="Project" />
-      <div className="text-md  basis-3/4   p-4 text-offWhite md:columns-2  md:text-lg  lg:p-global lg:pr-[33%] lg:text-xl ">
+      <div className="basis-3/4  p-4   text-sm text-offWhite md:columns-2  md:text-lg  lg:p-global lg:pr-[33%] lg:text-xl ">
         <p className=" font-regular font-Raleway ">
-          <p className=" font-Raleway text-3xl font-bold">
+          <p className=" font-Raleway  font-bold">
             A NEH-AHRC New Directions for Digital Scholarship in Cultural
             Institutions project
           </p>

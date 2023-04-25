@@ -5,7 +5,7 @@ export default function search() {
     <div className=" relative flex h-screen   flex-1  flex-col  overflow-hidden      text-accent">
       <Title firstLine="Similarity" secondLine="Search" />
       <div className="mx-auto flex  basis-3/4 items-center ">
-        <img className="max-w-sm md:max-w-lg" src={sample} alt="dots" />
+        <img className="max-w-xs md:max-w-lg" src={sample} alt="dots" />
       </div>
     </div>
   );
